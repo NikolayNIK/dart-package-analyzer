@@ -16,7 +16,7 @@ COPY --from=dartimage /app/dart_package_analyzer /dart_package_analyzer
 ENV PATH /root/.pub-cache/bin:/flutter/bin:$PATH
 
 RUN apt-get update -y \
-    && apt-get install -y --no-install-recommends unzip \
+    && apt-get install -y --no-install-recommends unzip webp \
     && rm -rf /var/lib/apt/lists/*
 
 # Installing Flutter
